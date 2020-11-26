@@ -6,7 +6,7 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links">
-        <a href="#" class="giant-button" *ngFor="let travel of (travels | ClickTravelPipe)"> {{travel.name}} </a>
+        <a href="#" class="giant-button" *ngFor="let travel of (travels | ClickTravelPipe)" (click)="getTicket(travel.code)"> {{travel.name}} </a>
       </div>
     </div>
   </div>
